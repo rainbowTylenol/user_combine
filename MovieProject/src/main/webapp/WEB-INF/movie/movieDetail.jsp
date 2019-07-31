@@ -12,6 +12,7 @@
 * @ 2019.07.03     한유진      최초생성
 * @ 2019.07.09     한유진      jsp로 변경
 * @ 2019.07.15     한유진      7/12 회의결과 수정
+* @ 2019.07.22     한유진    	 header, footer 수정(1,2 버전으로 변경)
 *
 * @author BIT 116기 2조
 * @since 2019. 07.01
@@ -21,10 +22,10 @@
 *  Copyright (C) by bit 2조 All right reserved.
 */
 -->
-<%@ include file="../header.jsp"%>
-<head>
+<%@ include file="../header1.jsp"%>
 	<link rel="stylesheet" href="<c:url value="/resources/css/yj_style.css" />">
-</head>
+<%@ include file="../header2.jsp" %>
+
 <div class="buster-light">
 	<div class="hero mv-single-hero">
 		<div class="container">
@@ -355,8 +356,8 @@
 		</div>
 	</div>
 </div>
-
-<script src="js/yj_js.js"></script>
-<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
-<%@ include file="../footer.jsp"%>
+<%@ include file="../footer1.jsp"%>
+	<script src="js/yj_js.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+<%@ include file="../footer2.jsp"%>
 
